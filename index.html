@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Twittler</title>
+</head>
+
+<body>
+    <header>
+        <h1>Twittler</h1>
+    </header>
+
+    <form>
+        <label for="userName">UserName</label>
+        <input type="text" name="userName" id="input-userName" placeholder="대문자 소문자 10자리">
+        <label for="comment">Comment</label>
+        <textarea name="comment" id="input-comment" cols="30" rows="10">
+        </textarea>
+        <input type="submit" value="트윗하기" id="input-submit">
+    </form>
+
+    <div class="tweet-container">
+        <div class="checkBtn-container">
+            <button class="btn_checkNewTweet">check new Tweet</button>
+        </div>
+        <ul class="tweet-listgroup">
+            <li class="tweet">
+                <p class="tweet-info">
+                    <span class="tweet-username">이름</span>
+                    <span class="tweet-date">2020/04/35</span>
+                    <span class="tweet-time">10:50:20</span>
+                </p>
+                <p class="tweet-content">
+                    트윗 내용
+                </p>
+            </li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

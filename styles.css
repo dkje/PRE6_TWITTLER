@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    width: 800px;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+    background-color: aqua;
+    padding: 20px 0;
+    border: 3px solid #333;
+}
+
+form > * {
+    display: block;
+}
+
+form {
+    width: 800px;
+    background-color: aqua;
+    padding: 20px;
+}
+
+label,
+input,
+textarea {
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 700px;
+    resize: none;
+}
+
+#input-submit {
+    width: 100px;
+    height: 50px;
+}
+
+.tweet-container {
+    margin-top: 30px;
+    width: 800px;
+    background-color: aqua;
+}
+
+.checkBtn-container {
+    width: 100%;
+    padding: 20px;
+    background-color: bisque;
+}
+
+.btn_checkNewTweet {
+    padding: 10px 20px;
+}
+
+.tweet-listgroup {
+    padding-inline-start: 0;
+    padding: 0 20px;
+    list-style-type: none;
+    padding-bottom: 30px;
+}
+
+.tweet {
+    border-bottom: 1px solid #000;
+}
+
+.tweet-info {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    column-gap: 20px;
+}
