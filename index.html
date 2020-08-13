@@ -2,44 +2,54 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Twittler</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="css/reset.css"> -->
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;500;900&display=swap" rel="stylesheet">
+  <title>Twittler</title>
 </head>
 
 <body>
-    <header>
-        <h1>Twittler</h1>
-    </header>
-
-    <form>
-        <label for="userName">UserName</label>
-        <input type="text" name="userName" id="input-userName" placeholder="대문자 소문자 10자리">
-        <label for="comment">Comment</label>
-        <textarea name="comment" id="input-comment" cols="30" rows="10">
-        </textarea>
-        <input type="submit" value="트윗하기" id="input-submit">
+  <div class="header">
+    <h1>twittler</h1>
+  </div>
+  <div class="form_container">
+    <form action=".../" method="get">
+      <label for="user_name">User Name</label>
+      <input type="text" id="user__name--input" name="user_name" placeholder="이름을 입력해주세요">
+      <label for="comment">Comment</label>
+      <textarea type="text" id="comment--input" name="comment" placeholder="무슨 일이 일어나고 있나요?"></textarea>
+      <input type="submit" value="tweet!" id="btn__submit" class="btn">
     </form>
-
-    <div class="tweet-container">
-        <div class="checkBtn-container">
-            <button class="btn_checkNewTweet">check new Tweet</button>
-        </div>
-        <ul class="tweet-listgroup">
-            <li class="tweet">
-                <p class="tweet-info">
-                    <span class="tweet-username">이름</span>
-                    <span class="tweet-date">2020/04/35</span>
-                    <span class="tweet-time">10:50:20</span>
-                </p>
-                <p class="tweet-content">
-                    트윗 내용
-                </p>
-            </li>
-        </ul>
+  </div>
+  <div class="twit--container">
+    <div class="ckeck__btn--container">
+      <button class="btn" id="btn__new-tweet">check new tweet</button>
+      <button class="btn" id="btn__view-all">view all</button>
     </div>
+    <div class="twitt__view--container">
+      <ul class="twitt__view--list">
 
+        <template id="new__twitt">
+          <li class="twitt__item">
+            <p class="twitt__info">
+              <span id="twitt__name"></span>
+              <span id="twitt__date"></span>
+            </p>
+            <p id="twitt__text">
+            </p>
+          </li>
+        </template>
+
+      </ul>
+    </div>
+  </div>
+
+  <div class="bg--container">
+    <div class="bg-lighter"></div>
+  </div>
 </body>
-
-</html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment-with-locales.min.js" integrity="sha512-qSnlnyh7EcD3vTqRoSP4LYsy2yVuqqmnkM9tW4dWo6xvAoxuVXyM36qZK54fyCmHoY1iKi9FJAUZrlPqmGNXFw==" crossorigin="anonymous"></script>
+<script src="utility.js"></script>
+<script src="main.js"></script>

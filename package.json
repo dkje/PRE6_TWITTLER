@@ -1,0 +1,20 @@
+{
+  "name": "PRE-twittler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "data.js",
+  "scripts": {
+    "submit": "node .travis/submit.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codestates/PRE-twittler.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codestates/PRE-twittler/issues"
+  },
+  "homepage": "https://github.com/codestates/PRE-twittler#readme"
+}
